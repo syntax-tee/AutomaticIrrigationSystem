@@ -1,4 +1,4 @@
-package com.digitalfactory.automaticirrigationsystem;
+package com.ogunladetaiye.automaticirrigationsystem;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
