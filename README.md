@@ -6,10 +6,10 @@ The following guides illustrate how to run this project :
 ### Database Model and Seed
 
 Database seed data can be found in **data.sql**</br>
-src/main/resources/data.sql</br>
+[src/main/resources/data.sql](https://github.com/syntax-tee/AutomaticIrrigationSystem/blob/master/src/main/resources/data.sql)</br>
 
 Database schema is defined in  **schema.sql**</br>
-src/main/resources/schema.sql</br>
+[src/main/resources/schema.sql](https://github.com/syntax-tee/AutomaticIrrigationSystem/blob/master/src/main/resources/schema.sql)</br>
 
 ### Database Documentation
 
