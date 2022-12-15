@@ -22,8 +22,8 @@ public class TimeSlot {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "start_time")
-    private LocalTime startTime;
+    @Column(name = "schedule_time")
+    private LocalTime scheduleTime;
 
     @Column(name = "duration")
     private Integer duration;
@@ -36,6 +36,6 @@ public class TimeSlot {
     @JsonIgnore
     private Plot plot;
 
-    @Column(name = "current_status")
+    @Column(name = "status")
     private String status;
 }

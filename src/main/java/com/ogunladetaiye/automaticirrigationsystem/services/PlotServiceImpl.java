@@ -7,6 +7,7 @@ import com.ogunladetaiye.automaticirrigationsystem.exception.PlotOfLandNotFoundE
 import com.ogunladetaiye.automaticirrigationsystem.model.Plot;
 import com.ogunladetaiye.automaticirrigationsystem.respository.PlotRepository;
 import com.ogunladetaiye.automaticirrigationsystem.respository.TimeSlotRepository;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,6 +16,7 @@ import java.util.stream.Collectors;
 
 import static com.ogunladetaiye.automaticirrigationsystem.dto.response.PlotResponse.fromEntity;
 
+@Log4j2
 @Service
 public class PlotServiceImpl implements PlotService {
 
@@ -82,9 +84,4 @@ public class PlotServiceImpl implements PlotService {
         return plot.getTimeSlots().stream().map(TimeSlotResponse::fromEntity).collect(Collectors.toList());
     }
 
-    @Override
-    public TimeSlotResponse getTimeSlotByPlotId(Long id) {
-        var plot = plotRepository.findPlotById(id);
-        return (TimeSlotResponse) plot.getTimeSlots().stream().filter(i-> i.getId().equals(id));
-    }
 }

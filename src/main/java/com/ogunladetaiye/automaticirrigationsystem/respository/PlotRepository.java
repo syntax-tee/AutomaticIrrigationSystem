@@ -7,9 +7,13 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.Optional;
+
 public interface PlotRepository extends JpaRepository<Plot, Long> {
 
     Plot findPlotById(Long id);
+
+    Optional<Plot> findPlotByPlotName(String plotName);
 
     @Transactional
     @Modifying(clearAutomatically = true)

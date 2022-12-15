@@ -27,12 +27,21 @@ public class PlotRequest {
     @NotNull
     private String soilType;
 
+    private String cropType;
+    private double latitude;
+    private double longitude;
+    private double soilMoisture;
+
     public Plot toEntity() {
         return Plot.builder()
                 .plotName(this.plotName)
                 .length(this.length)
                 .width(this.width)
                 .soilType(SoilTypes.valueOf(this.soilType).name())
+                .cropType(this.cropType)
+                .soilMoisture(this.soilMoisture)
+                .latitude(this.latitude)
+                .longitude(this.longitude)
                 .build();
     }
 }

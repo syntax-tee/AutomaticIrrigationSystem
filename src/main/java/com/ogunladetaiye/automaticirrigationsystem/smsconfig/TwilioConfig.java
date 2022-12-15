@@ -1,4 +1,4 @@
-package com.ogunladetaiye.automaticirrigationsystem.config;
+package com.ogunladetaiye.automaticirrigationsystem.smsconfig;
 
 import com.twilio.Twilio;
 import org.springframework.beans.factory.annotation.Value;

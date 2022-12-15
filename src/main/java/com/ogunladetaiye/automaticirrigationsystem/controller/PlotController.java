@@ -6,12 +6,14 @@ import com.ogunladetaiye.automaticirrigationsystem.dto.response.PlotResponse;
 import com.ogunladetaiye.automaticirrigationsystem.services.PlotService;
 
 import io.swagger.v3.oas.annotations.tags.Tag;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
 
+@Log4j2
 @RestController
 @RequestMapping("api/v1/plots")
 @Tag(name = "Plot Controller", description = "This REST controller provides services to manage plots of land an Automatic Irrigation System")

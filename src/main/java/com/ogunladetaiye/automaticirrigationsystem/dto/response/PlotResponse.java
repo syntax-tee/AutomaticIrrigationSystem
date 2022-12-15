@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Column;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
@@ -17,6 +19,10 @@ public class PlotResponse {
     private double width;
     private String plotName;
     private String soilType;
+    private double longitude;
+    private double latitude;
+    private double soilMoisture;
+    private String cropType;
 
 
     public static PlotResponse fromEntity(Plot plot) {
@@ -26,6 +32,10 @@ public class PlotResponse {
                 .width(plot.getWidth())
                 .length(plot.getLength())
                 .soilType(plot.getSoilType())
+                .cropType(plot.getCropType())
+                .soilMoisture(plot.getSoilMoisture())
+                .latitude(plot.getLatitude())
+                .longitude(plot.getLongitude())
                 .build();
     }
 
@@ -36,6 +46,10 @@ public class PlotResponse {
                 .width(plot.getWidth())
                 .length(plot.getLength())
                 .soilType(plot.getSoilType())
+                .cropType(plot.getCropType())
+                .soilMoisture(plot.getSoilMoisture())
+                .latitude(plot.getLatitude())
+                .longitude(plot.getLongitude())
                 .build();
     }
 

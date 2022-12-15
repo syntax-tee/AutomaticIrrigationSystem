@@ -5,20 +5,22 @@ import com.ogunladetaiye.automaticirrigationsystem.respository.TimeSlotRepositor
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Component;
 
+@Log4j2
 @Component
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class SensorDevice {
+public class SensorServiceDeviceImpl {
 
     private SensorStatus sensorStatus;
 
     private TimeSlotRepository timeSlotRepository;
 
 
-    public SensorDevice(TimeSlotRepository timeSlotRepository) {
+    public SensorServiceDeviceImpl(TimeSlotRepository timeSlotRepository) {
         this.timeSlotRepository = timeSlotRepository;
     }
 

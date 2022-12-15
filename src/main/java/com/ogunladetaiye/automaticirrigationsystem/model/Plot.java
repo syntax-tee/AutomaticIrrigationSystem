@@ -26,13 +26,25 @@ public class Plot {
     @Column(name = "width")
     private double width;
 
+    @Column(name = "longitude")
+    private double longitude;
+
+    @Column(name = "latitude")
+    private double latitude;
+
     @Column(name = "plot_name")
     private String plotName;
 
     @Column(name = "soil_type")
     private String soilType;
 
-    @OneToMany
+    @Column(name = "soil_moisture")
+    private double soilMoisture;
+
+    @Column(name = "cropType")
+    private String cropType;
+
+    @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "plot_id")
     private List<TimeSlot> timeSlots;
 

@@ -7,6 +7,8 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.sql.Timestamp;
+
 public interface TimeSlotRepository extends JpaRepository<TimeSlot, Long> {
 
     @Transactional
@@ -19,7 +21,6 @@ public interface TimeSlotRepository extends JpaRepository<TimeSlot, Long> {
             """)
     void updateTimeSlotStatus(@Param(value = "id") Long id, @Param(value = "current_status") String current_status);
 
-    TimeSlot findTimeSlotByPlotId(Long id);
 
 
 }

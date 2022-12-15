@@ -16,7 +16,7 @@ public class TimeSlotResponse {
 
     private Long id;
 
-    private LocalTime startTime;
+    private LocalTime scheduleTime;
 
     private Integer duration;
 
@@ -27,7 +27,7 @@ public class TimeSlotResponse {
     public static TimeSlotResponse fromEntity(TimeSlot timeSlot) {
         return TimeSlotResponse.builder()
                 .id(timeSlot.getId())
-                .startTime(timeSlot.getStartTime())
+                .scheduleTime(timeSlot.getScheduleTime())
                 .duration(timeSlot.getDuration())
                 .waterQuantity(timeSlot.getWaterQuantity())
                 .status(timeSlot.getStatus())

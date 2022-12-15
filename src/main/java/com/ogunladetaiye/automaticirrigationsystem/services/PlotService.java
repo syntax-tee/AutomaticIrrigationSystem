@@ -23,6 +23,4 @@ public interface PlotService {
 
     List<TimeSlotResponse> getTimeSlotsByPlotId(Long id);
 
-    TimeSlotResponse getTimeSlotByPlotId(Long id);
-
 }
