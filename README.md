@@ -5,8 +5,8 @@ The following guides illustrate how to run this project :
 
 ### Database Model and Seed
 
-Database seed data can be found in <b>data.sql<b/>  
-Database schema is defined in  <b>schema.sql<b/>
+Database seed data can be found in  ##data.sql
+Database schema is defined in  ##schema.sq
 
 ### Database Documentation
 
