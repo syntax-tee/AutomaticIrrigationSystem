@@ -60,7 +60,7 @@ class PlotRepositoryTestShould {
     @Test
     @DisplayName("Persist plot entity")
     void persistDataToPlotEntity() {
-//        Plot newPlot = Plot.builder()
+          //        Plot newPlot = Plot.builder()
 //                .plotName("Plot 8")
 //                .length(23.4)
 //                .width(45.6)

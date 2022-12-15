@@ -8,7 +8,7 @@ Java Version 17 is required to run this project.
 The following guides illustrate how to run this project :
 
 **1. Clone the project into your IDE** from https://github.com/syntax-tee/AutomaticIrrigationSystem.git <br/>
-**2. Run maven command** ./mvnw spring-boot:run from terminal <br/>
+**2. Run maven command from terminal** ./mvnw spring-boot:run  <br/>
 
 ### Database Entity Relationship Diagram(ERD)
 ![Screenshot 2022-12-15 at 12 02 09](https://user-images.githubusercontent.com/49109632/207843383-2ae8a2cb-6418-4424-a516-61156fdc82dc.png)
@@ -33,7 +33,6 @@ Username: admin
 Password: password
   
 ![Screenshot 2022-12-15 at 10 37 18](https://user-images.githubusercontent.com/49109632/207827311-e659dc9c-969a-48be-81a3-7028bf2e9b3e.png)
-
 ### Swagger API  Documentation
 http://localhost:8081/irrigation/swagger-ui/index.html
 
