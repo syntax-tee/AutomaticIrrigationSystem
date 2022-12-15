@@ -1,7 +1,8 @@
 package com.ogunladetaiye.automaticirrigationsystem.services;
 
-import com.ogunladetaiye.automaticirrigationsystem.dto.PlotRequest;
-import com.ogunladetaiye.automaticirrigationsystem.dto.PlotResponse;
+import com.ogunladetaiye.automaticirrigationsystem.dto.request.PlotRequest;
+import com.ogunladetaiye.automaticirrigationsystem.dto.response.PlotResponse;
+import com.ogunladetaiye.automaticirrigationsystem.dto.response.TimeSlotResponse;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -19,4 +20,9 @@ public interface PlotService {
     PlotResponse createPlot(PlotRequest request);
 
     PlotResponse updatePlotOfLand(Long id,PlotRequest request);
+
+    List<TimeSlotResponse> getTimeSlotsByPlotId(Long id);
+
+    TimeSlotResponse getTimeSlotByPlotId(Long id);
+
 }

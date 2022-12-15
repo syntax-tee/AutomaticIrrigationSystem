@@ -1,4 +1,4 @@
-package com.ogunladetaiye.automaticirrigationsystem.dto;
+package com.ogunladetaiye.automaticirrigationsystem.dto.response;
 
 import com.ogunladetaiye.automaticirrigationsystem.model.Plot;
 import lombok.AllArgsConstructor;

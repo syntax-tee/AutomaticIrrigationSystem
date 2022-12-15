@@ -1,5 +1,6 @@
-package com.ogunladetaiye.automaticirrigationsystem.dto;
+package com.ogunladetaiye.automaticirrigationsystem.dto.request;
 
+import com.ogunladetaiye.automaticirrigationsystem.dto.enums.SoilTypes;
 import com.ogunladetaiye.automaticirrigationsystem.model.Plot;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -31,7 +32,7 @@ public class PlotRequest {
                 .plotName(this.plotName)
                 .length(this.length)
                 .width(this.width)
-                .soilType(this.soilType)
+                .soilType(SoilTypes.valueOf(this.soilType).name())
                 .build();
     }
 }

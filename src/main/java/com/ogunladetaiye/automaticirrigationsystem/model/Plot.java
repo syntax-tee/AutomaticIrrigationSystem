@@ -6,12 +6,13 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @Data
-@Table(name = "plot")
+@Table(name = "plots")
 @Entity
 public class Plot {
 
@@ -30,5 +31,9 @@ public class Plot {
 
     @Column(name = "soil_type")
     private String soilType;
+
+    @OneToMany
+    @JoinColumn(name = "plot_id")
+    private List<TimeSlot> timeSlots;
 
 }
