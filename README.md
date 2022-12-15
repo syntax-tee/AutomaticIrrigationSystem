@@ -5,10 +5,10 @@ The following guides illustrate how to run this project :
 
 ### Database Model and Seed
 
-Database seed data can be found in  ###data.sql
+Database seed data can be found in  ###data.sql <b/>
 https://github.com/syntax-tee/AutomaticIrrigationSystem/blob/master/src/main/resources/data.sql
 
-Database schema is defined in  ###schema.sql
+Database schema is defined in  ###schema.sql  <b/>
 https://github.com/syntax-tee/AutomaticIrrigationSystem/blob/master/src/main/resources/schema.sql
 
 ### Database Documentation
