@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/v1/time_slots")
+@RequestMapping("api/v1/time_slots")
 @Tag(name = "TimeSlot Controller", description = "")
 public class TimeSlotController {
 

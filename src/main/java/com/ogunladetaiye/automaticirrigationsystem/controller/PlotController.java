@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/v1/plots")
+@RequestMapping("api/v1/plots")
 @Tag(name = "Plot Controller", description = "This REST controller provides services to manage plots of land an Automatic Irrigation System")
 public class PlotController {
 

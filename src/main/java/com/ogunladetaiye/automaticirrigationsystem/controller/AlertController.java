@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("v1/alert")
+@RequestMapping("api/v1/alert")
 @Tag(name = "Alert Controller", description = "This REST controller provides alert service via Twillio API")
 public class AlertController {
 
