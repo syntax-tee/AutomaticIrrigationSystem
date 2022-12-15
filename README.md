@@ -1,8 +1,18 @@
 # Automatic Irrigation System
 * Developed by [Taiye Ogunlade](https://www.linkedin.com/in/taiye-ogunlade/)
 
-# Running the projec
+# How to run this project
+
+Java Version 17 is required to run this project.
+
 The following guides illustrate how to run this project :
+
+**1. Clone the project into your IDE** from https://github.com/syntax-tee/AutomaticIrrigationSystem.git <br/>
+**2. Run maven command** ./mvnw spring-boot:run from terminal <br/>
+
+### Database Entity Relationship Diagram(ERD)
+![Screenshot 2022-12-15 at 12 02 09](https://user-images.githubusercontent.com/49109632/207843383-2ae8a2cb-6418-4424-a516-61156fdc82dc.png)
+
 
 ### Database Model and Seed
 
