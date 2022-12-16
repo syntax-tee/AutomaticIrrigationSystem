@@ -10,6 +10,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 @AutoConfigureMockMvc
 @ExtendWith(SpringExtension.class)
 class PlotControllerTestShould {
+       //TODO WRITE REST ASSURED TESTS
 
 
 }

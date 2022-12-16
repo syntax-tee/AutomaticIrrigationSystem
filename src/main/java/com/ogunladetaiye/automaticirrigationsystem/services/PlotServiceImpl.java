@@ -10,6 +10,8 @@ import com.ogunladetaiye.automaticirrigationsystem.respository.TimeSlotRepositor
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Service;
 
+import javax.validation.Valid;
+import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -30,7 +32,11 @@ public class PlotServiceImpl implements PlotService {
 
     @Override
     public List<PlotResponse> getAllPlots() {
-        return plotRepository.findAll().stream().map(PlotResponse::fromEntity).collect(Collectors.toList());
+        if (plotRepository.findAll().isEmpty()) {
+            return Collections.emptyList();
+        } else {
+            return plotRepository.findAll().stream().map(PlotResponse::fromEntity).collect(Collectors.toList());
+        }
     }
 
     @Override
@@ -44,8 +50,8 @@ public class PlotServiceImpl implements PlotService {
     }
 
     @Override
-    public PlotResponse configurePlotOfLand(Long id, PlotRequest plotRequest) {
-        PlotResponse existingPlotOfland = plotRepository.findById(id).map(PlotResponse::fromEntity).orElseThrow(() -> new PlotOfLandNotFoundException(String.format("No plot of land with id %s ", id)));
+    public PlotResponse configurePlotOfLand(Long id, @Valid PlotRequest plotRequest) {
+        PlotResponse existingPlotOfland = plotRepository.findById(id).map(PlotResponse::fromEntity).orElseThrow(() -> new PlotOfLandNotFoundException(String.format("No plot of land with id %s is found", id)));
 
         existingPlotOfland.setPlotName(plotRequest.getPlotName());
         existingPlotOfland.setWidth(plotRequest.getWidth());
@@ -58,13 +64,13 @@ public class PlotServiceImpl implements PlotService {
     }
 
     @Override
-    public PlotResponse createPlot(PlotRequest plotRequest) {
+    public PlotResponse createPlot(@Valid PlotRequest plotRequest) {
         Plot plot = plotRepository.save(plotRequest.toEntity());
         return fromEntity(plot);
     }
 
     @Override
-    public PlotResponse updatePlotOfLand(Long id, PlotRequest plotRequest) {
+    public PlotResponse updatePlotOfLand(Long id, @Valid  PlotRequest plotRequest) {
 
         PlotResponse existingPlotOfland = plotRepository.findById(id).map(PlotResponse::fromEntity).orElseThrow(() -> new PlotOfLandNotFoundException(String.format("No plot of land with id %s ", id)));
 

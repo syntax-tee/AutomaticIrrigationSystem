@@ -81,4 +81,36 @@ class PlotServiceTestShould {
         //then
         assertThat(plots.size()).isEqualTo(4);
     }
+
+    @DisplayName("Edit Plot By Id")
+    @Test
+    void editPlotOfLand() {
+
+        //given
+        Plot newPlot = Plot.builder()
+                .plotName("Plot 8")
+                .length(23.4)
+                .width(45.6)
+                .soilType("CLAY")
+                .cropType("cereal")
+                .soilMoisture(33.5)
+                .longitude(56.5)
+                .latitude(47.4).build();
+        Plot savedPlot = plotRepository.save(newPlot);
+
+        //when
+        Plot plotTobeUpdated = Plot.builder()
+                .plotName("Plot 8")
+                .length(23.4)
+                .width(45.6)
+                .soilType("LOAMY")
+                .cropType("vegetable")
+                .soilMoisture(33.5)
+                .longitude(56.5)
+                .latitude(47.4).build();
+        plotRepository.editPlot(newPlot.getId(),plotTobeUpdated.getLength(),plotTobeUpdated.getWidth(),plotTobeUpdated.getPlotName(),plotTobeUpdated.getSoilType());
+
+        //then
+        assertThat(savedPlot).isNotEqualTo(plotTobeUpdated);
+    }
 }

@@ -19,18 +19,18 @@ public class PlotRequest {
     private String plotName;
 
     @NotNull
-    private double length;
+    private Double length;
 
     @NotNull
-    private double width;
+    private Double width;
 
     @NotNull
     private String soilType;
 
     private String cropType;
-    private double latitude;
-    private double longitude;
-    private double soilMoisture;
+    private Double latitude;
+    private Double longitude;
+    private Double soilMoisture;
 
     public Plot toEntity() {
         return Plot.builder()
