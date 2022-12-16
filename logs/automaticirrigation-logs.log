@@ -1,28 +1,28 @@
-2022-12-16 01:21:14,553 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
-2022-12-16 01:21:14,596 INFO o.s.b.StartupInfoLogger [main] Starting AutomaticIrrigationSystemApplication using Java 17.0.3.1 on Taiyes-MacBook-Pro-2.local with PID 26142 (/Users/taiyeogunlade/Desktop/BM/Assignment/AutomaticIrrigationSystem/target/classes started by taiyeogunlade in /Users/taiyeogunlade/Desktop/BM/Assignment/AutomaticIrrigationSystem)
-2022-12-16 01:21:14,604 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.7.6, Spring v5.3.24
-2022-12-16 01:21:14,607 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
-2022-12-16 01:21:15,762 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-12-16 01:21:15,910 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 127 ms. Found 2 JPA repository interfaces.
-2022-12-16 01:21:16,808 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8081 (http)
-2022-12-16 01:21:16,825 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
-2022-12-16 01:21:16,826 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
-2022-12-16 01:21:16,827 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.69]
-2022-12-16 01:21:16,930 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
-2022-12-16 01:21:16,930 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 2259 ms
-2022-12-16 01:21:16,962 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
-2022-12-16 01:21:17,131 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
-2022-12-16 01:21:17,144 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:irrigationdb'
-2022-12-16 01:21:17,325 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-12-16 01:21:17,379 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.14.Final
-2022-12-16 01:21:17,483 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-12-16 01:21:17,583 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2022-12-16 01:21:18,177 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-12-16 01:21:18,185 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-12-16 01:21:18,717 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-12-16 01:21:19,634 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
-2022-12-16 01:21:19,653 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8081 (http) with context path '/irrigation'
-2022-12-16 01:21:19,665 INFO o.s.b.StartupInfoLogger [main] Started AutomaticIrrigationSystemApplication in 5.52 seconds (JVM running for 7.025)
-2022-12-16 01:21:30,096 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-12-16 01:21:30,096 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
-2022-12-16 01:21:30,097 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Completed initialization in 1 ms
+2022-12-16 10:58:57,330 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 6.2.5.Final
+2022-12-16 10:58:57,376 INFO o.s.b.StartupInfoLogger [main] Starting AutomaticIrrigationSystemApplication using Java 17.0.3.1 on Taiyes-MacBook-Pro-2.local with PID 4486 (/Users/taiyeogunlade/Desktop/BM/Assignment/AutomaticIrrigationSystem/target/classes started by taiyeogunlade in /Users/taiyeogunlade/Desktop/BM/Assignment/AutomaticIrrigationSystem)
+2022-12-16 10:58:57,385 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v2.7.6, Spring v5.3.24
+2022-12-16 10:58:57,387 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-12-16 10:58:59,228 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-16 10:58:59,384 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 120 ms. Found 2 JPA repository interfaces.
+2022-12-16 10:59:00,643 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8081 (http)
+2022-12-16 10:59:00,674 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8081"]
+2022-12-16 10:59:00,675 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2022-12-16 10:59:00,677 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.69]
+2022-12-16 10:59:00,831 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-12-16 10:59:00,831 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3378 ms
+2022-12-16 10:59:00,940 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2022-12-16 10:59:01,188 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-12-16 10:59:01,209 INFO o.s.b.a.h.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:irrigationdb'
+2022-12-16 10:59:01,532 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-16 10:59:01,635 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 5.6.14.Final
+2022-12-16 10:59:01,809 INFO o.h.a.c.r.j.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-16 10:59:01,932 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-12-16 10:59:02,778 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-16 10:59:02,791 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-16 10:59:03,563 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-16 10:59:04,808 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8081"]
+2022-12-16 10:59:04,840 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8081 (http) with context path '/irrigation'
+2022-12-16 10:59:04,858 INFO o.s.b.StartupInfoLogger [main] Started AutomaticIrrigationSystemApplication in 8.08 seconds (JVM running for 10.201)
+2022-12-16 11:00:00,718 INFO o.a.j.l.DirectJDKLog [http-nio-8081-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-16 11:00:00,718 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-12-16 11:00:00,719 INFO o.s.w.s.FrameworkServlet [http-nio-8081-exec-1] Completed initialization in 1 ms
